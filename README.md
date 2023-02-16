@@ -1,2 +1,1 @@
-# hairSalonWebsite
-Checkpoint
+# hairSalon

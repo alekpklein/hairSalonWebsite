@@ -1,0 +1,102 @@
+/* div.main-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} */
+div.main-section {
+    background-image: url(/Images/hair.png);
+    background-size: cover;
+    height: 30rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+div.text-box {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+h1, p, button {
+    margin: .5rem;
+    color: white;
+}
+h1 {
+    /* background-color: black; */
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-size: 2rem;
+    font-family: 'Titan One', cursive;
+}
+p {
+    /* background-color: #333; */
+    background-color: rgba(105, 105, 105, 0.2);
+    border-radius: 10%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 10px 15px black;
+
+}
+button {
+    background-color: 0ba39c;
+    height: 3.5rem;
+    width: 10rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.4rem;
+    margin-left: 8rem;
+    border: none;
+    font-weight: bold;
+    transition: filter 0.3s ease-in-out;
+}
+button:hover {
+    filter: brightness(110%);
+}
+.haircuts {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.haircut-1, .haircut-2, .haircut-3 {
+    margin: 2rem 2rem;
+    /* border: .3rem solid; */
+}
+.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 3rem;
+}
+.haircut-description {
+    margin: 0 9rem;
+    font-size: 1.2rem;
+        font-family: 'Titan One', cursive;
+
+}
+@media (max-width: 700px) {
+
+    .haircuts {
+        display: flex;
+        flex-direction: column;
+    }
+    .description {
+        display: none;
+    }
+    h1 {
+        text-align: center;
+    }
+    div.text-box {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+}

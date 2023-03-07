@@ -6,16 +6,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Styles/reset.css">
+    <!-- below should be one . and not two. 
+        ./ means: look for a file/folder around me(index.html)
+        ../ means: go up a directory and look around there -->
+    <link rel="stylesheet" href="./Styles/reset.css">
     <link rel="stylesheet" href="./Styles/same-styles.css">
-    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
     <script src="https://kit.fontawesome.com/5d4b860863.js" crossorigin="anonymous"></script>
     <title>Landing Page</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="../Images/logo.png" alt="logo">
+            <img src="./Images/logo.png" alt="logo">
         </div>
         <div class="navbar">
             <nav>
@@ -54,9 +57,10 @@
         </div>
     </div>
     <div class="haircuts">
-        <div class="haircut-1"><img src="../Images/haircut-1.jpeg" alt=""></div>
-        <div class="haircut-2"><img src="../Images/haircut-2.jpeg" alt=""></div>
-        <div class="haircut-3"><img src="../Images/haircut-3.jpeg" alt=""></div>
+        <!-- always a good idea to add a little description of the image in the alt="" attribute -->
+        <div class="haircut-1"><img src="./Images/haircut-1.jpeg" alt=""></div>
+        <div class="haircut-2"><img src="./Images/haircut-2.jpeg" alt=""></div>
+        <div class="haircut-3"><img src="./Images/haircut-3.jpeg" alt=""></div>
     </div>
     <div class="description">
         <div class="haircut-description">SMOOTH</div>
